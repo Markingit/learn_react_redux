@@ -737,6 +737,12 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.2.0":
+  version "7.2.0"
+  resolved "http://r.cnpmjs.org/@babel/runtime/download/@babel/runtime-7.2.0.tgz#b03e42eeddf5898e00646e4c840fa07ba8dcad7f"
+  dependencies:
+    regenerator-runtime "^0.12.0"
+
 "@babel/template@^7.1.0", "@babel/template@^7.1.2":
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.1.2.tgz#090484a574fef5a2d2d7726a674eceda5c5b5644"
@@ -803,6 +809,44 @@
 "@nodelib/fs.stat@^1.0.1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.2.tgz#54c5a964462be3d4d78af631363c18d6fa91ac26"
+
+"@redux-saga/core@^1.0.0":
+  version "1.0.0"
+  resolved "http://r.cnpmjs.org/@redux-saga/core/download/@redux-saga/core-1.0.0.tgz#bbcbbc7f48eaaf13ccc42e005b6e33513ca3eac1"
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    "@redux-saga/deferred" "^1.0.0"
+    "@redux-saga/delay-p" "^1.0.0"
+    "@redux-saga/is" "^1.0.0"
+    "@redux-saga/symbols" "^1.0.0"
+    "@redux-saga/types" "^1.0.0"
+    redux ">=0.10 <5"
+    typescript-tuple "^2.1.0"
+
+"@redux-saga/deferred@^1.0.0":
+  version "1.0.0"
+  resolved "http://r.cnpmjs.org/@redux-saga/deferred/download/@redux-saga/deferred-1.0.0.tgz#faab86924114d411cc37be5c13dad7d9fe6ebced"
+
+"@redux-saga/delay-p@^1.0.0":
+  version "1.0.0"
+  resolved "http://r.cnpmjs.org/@redux-saga/delay-p/download/@redux-saga/delay-p-1.0.0.tgz#eefe4213080d517cc2a5429146ba3f44ece3de26"
+  dependencies:
+    "@redux-saga/symbols" "^1.0.0"
+
+"@redux-saga/is@^1.0.0":
+  version "1.0.0"
+  resolved "http://r.cnpmjs.org/@redux-saga/is/download/@redux-saga/is-1.0.0.tgz#b9059508e7704d0469a10913c6816cac70f7278f"
+  dependencies:
+    "@redux-saga/symbols" "^1.0.0"
+    "@redux-saga/types" "^1.0.0"
+
+"@redux-saga/symbols@^1.0.0":
+  version "1.0.0"
+  resolved "http://r.cnpmjs.org/@redux-saga/symbols/download/@redux-saga/symbols-1.0.0.tgz#264748aff73feb5ea2627b2a1c5ef15f6a0fac5e"
+
+"@redux-saga/types@^1.0.0":
+  version "1.0.0"
+  resolved "http://r.cnpmjs.org/@redux-saga/types/download/@redux-saga/types-1.0.0.tgz#9342b7eb52ed3c903e122841407d4984b7338339"
 
 "@svgr/core@^2.4.1":
   version "2.4.1"
@@ -4023,6 +4067,12 @@ hoek@4.x.x:
 hoist-non-react-statics@^2.3.1, hoist-non-react-statics@^2.5.0:
   version "2.5.5"
   resolved "http://r.cnpmjs.org/hoist-non-react-statics/download/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
+
+hoist-non-react-statics@^3.2.1:
+  version "3.2.1"
+  resolved "http://r.cnpmjs.org/hoist-non-react-statics/download/hoist-non-react-statics-3.2.1.tgz#c09c0555c84b38a7ede6912b61efddafd6e75e1e"
+  dependencies:
+    react-is "^16.3.2"
 
 home-or-tmp@^2.0.0:
   version "2.0.0"
@@ -7554,7 +7604,7 @@ react-error-overlay@^5.1.2:
   version "5.1.2"
   resolved "http://r.cnpmjs.org/react-error-overlay/download/react-error-overlay-5.1.2.tgz#888957b884d4b25b083a82ad550f7aad96585394"
 
-react-is@^16.7.0:
+react-is@^16.3.2, react-is@^16.6.3, react-is@^16.7.0:
   version "16.7.0"
   resolved "http://r.cnpmjs.org/react-is/download/react-is-16.7.0.tgz#c1bd21c64f1f1364c6f70695ec02d69392f41bfa"
 
@@ -7570,6 +7620,17 @@ react-lazy-load@^3.0.13:
 react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "http://r.cnpmjs.org/react-lifecycles-compat/download/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
+
+react-redux@^6.0.0:
+  version "6.0.0"
+  resolved "http://r.cnpmjs.org/react-redux/download/react-redux-6.0.0.tgz#09e86eeed5febb98e9442458ad2970c8f1a173ef"
+  dependencies:
+    "@babel/runtime" "^7.2.0"
+    hoist-non-react-statics "^3.2.1"
+    invariant "^2.2.4"
+    loose-envify "^1.4.0"
+    prop-types "^15.6.2"
+    react-is "^16.6.3"
 
 react-router-dom@^4.3.1:
   version "4.3.1"
@@ -7751,11 +7812,17 @@ redux-devtools-extension@^2.13.7:
   version "2.13.7"
   resolved "http://r.cnpmjs.org/redux-devtools-extension/download/redux-devtools-extension-2.13.7.tgz#14bd7a1a7c8bee7f397beb1116fd16fc9633b752"
 
+redux-saga@^1.0.0:
+  version "1.0.0"
+  resolved "http://r.cnpmjs.org/redux-saga/download/redux-saga-1.0.0.tgz#acb8b3ed9180fecbe75f342011d75af3ac11045b"
+  dependencies:
+    "@redux-saga/core" "^1.0.0"
+
 redux-thunk@^2.3.0:
   version "2.3.0"
   resolved "http://r.cnpmjs.org/redux-thunk/download/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
 
-redux@^4.0.1:
+"redux@>=0.10 <5", redux@^4.0.1:
   version "4.0.1"
   resolved "http://r.cnpmjs.org/redux/download/redux-4.0.1.tgz#436cae6cc40fbe4727689d7c8fae44808f1bfef5"
   dependencies:
@@ -8858,6 +8925,22 @@ type-is@~1.6.16:
 typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
+
+typescript-compare@^0.0.2:
+  version "0.0.2"
+  resolved "http://r.cnpmjs.org/typescript-compare/download/typescript-compare-0.0.2.tgz#7ee40a400a406c2ea0a7e551efd3309021d5f425"
+  dependencies:
+    typescript-logic "^0.0.0"
+
+typescript-logic@^0.0.0:
+  version "0.0.0"
+  resolved "http://r.cnpmjs.org/typescript-logic/download/typescript-logic-0.0.0.tgz#66ebd82a2548f2b444a43667bec120b496890196"
+
+typescript-tuple@^2.1.0:
+  version "2.1.0"
+  resolved "http://r.cnpmjs.org/typescript-tuple/download/typescript-tuple-2.1.0.tgz#22f0c5c605ecb659e8af310152e4f5abf1f80bd5"
+  dependencies:
+    typescript-compare "^0.0.2"
 
 ua-parser-js@^0.7.18:
   version "0.7.19"
